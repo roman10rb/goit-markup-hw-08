@@ -1,0 +1,36 @@
+.kontakts {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    
+ &__tel:hover,
+ &__tel:focus,
+ &__mail:hover,
+ &__mail:focus {
+    cursor: pointer;
+    color: var(--hover-color);
+}
+}
+
+.kontakts__tel,
+.kontakts__mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--sub-prime-color-text);
+
+    transition: var(--transition-effects);
+}
+
+.kontakts__ikon {
+    fill: currentColor;
+}
+

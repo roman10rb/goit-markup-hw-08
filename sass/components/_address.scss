@@ -1,0 +1,29 @@
+.address {
+    margin-top: 20px;
+}
+
+.address__list:first-child {
+    margin-top: 0;
+}
+
+.address__item {
+    font-style: normal;
+    margin-top: 9px;
+}
+
+.address__map {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.address__mail,
+.address__tel {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}

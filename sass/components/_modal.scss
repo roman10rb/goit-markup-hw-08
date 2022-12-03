@@ -1,0 +1,157 @@
+ .modal {
+
+     padding: 40px;
+ }
+
+ .modal__title {
+     display: block;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: calc(23/20);
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: #212121;
+     margin-bottom: 30px;
+ }
+
+ .modal__group {
+     list-style: none;
+
+ }
+
+ .modal__input {
+     outline: none;
+     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ &:focus {
+     border-color: #2196F3;
+ }
+
+ &:focus~.modal__ikon {
+     fill: #2196F3;
+ }
+ }
+
+ .modal__text {
+     font-size: 12px;
+     line-height: calc(14/12);
+     letter-spacing: 0.01em;
+     color: #757575;
+
+     position: absolute;
+     top: 0;
+     left: 0;
+     transform: translateY(calc(-100% - 4px));
+ }
+
+ .modal__group-field {
+     position: relative;
+     display: inline-block;
+     margin-bottom: 28px;
+     width: 100%;
+ }
+
+ .modal__input {
+     padding-top: 11px;
+     padding-bottom: 11px;
+     padding-left: 42px;
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     border-radius: 4px;
+     width: 100%;
+ }
+
+ .modal__ikon {
+     position: absolute;
+     display: inline-block;
+     top: 50%;
+     left: 12px;
+     transform: translateY(-50%);
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .modal__group-field--textarea {
+     margin-bottom: 20px;
+ }
+
+ .modal__group-field .textarea {
+     display: block;
+     padding: 12px 16px;
+     min-height: 120px;
+     color: inherit;
+ }
+
+ .textarea {
+     resize: none;
+     
+ &::placeholder {
+     font-size: 12px;
+     line-height: calc(14/12);
+     letter-spacing: 0.01em;
+     color: rgba(117, 117, 117, 0.5);
+ }
+
+ }
+
+
+ .modal__checkbox-field {
+     display: block;
+     margin-bottom: 30px;
+ }
+
+ .modal__checkbox-text {
+     font-size: 14px;
+     line-height: calc(24/14);
+     letter-spacing: 0.03em;
+     color: #757575;
+     user-select: none;
+ }
+
+ .modal__checkbox-text--link {
+     text-underline-offset: 3px;
+     color: #2196F3;
+ }
+
+ .button {
+     text-align: center;
+ }
+
+ .button__modal {
+     min-width: 200px;
+     padding: 10px 52px;
+
+     background: #2196F3;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+     border: transparent;
+
+     font-weight: 700;
+     font-size: 16px;
+     line-height: calc(30/16);
+     text-align: center;
+     letter-spacing: 0.06em;
+     color: #FFFFFF;
+     cursor: pointer;
+ }
+
+ .modal__checkbox {
+     appearance: none;
+     width: 16px;
+     height: 15px;
+     background-image: url(../images/hw6/Vector\ \(3\).svg);
+     border: 0;
+     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ }
+
+ .modal__checkbox-field {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+ }
+
+ .modal__checkbox-field .modal__checkbox:checked {
+     width: 16px;
+     height: 15px;
+     background-image: url(../images/hw6/icon\ check.svg);
+     outline: transparent;
+ }
