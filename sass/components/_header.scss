@@ -3,6 +3,24 @@
  }
 
  .container__header {
-     display: flex;
-     align-items: center;
+    display: flex;
+    align-items: center;
+
+@media screen and(max-width: 1199px) {
+     justify-content: space-between;
+   }
+ }
+ .header__menu-ikons{
+    display: flex;
+
+ }
+ .header__menu{
+   @media screen and(min-width: 768px){
+      display: none;
+   }
+    background-color: transparent;
+
+    &:hover, &:focus{
+        fill: var(--web-part-inLogo-color);
+    }
  }

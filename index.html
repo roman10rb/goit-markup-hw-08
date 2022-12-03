@@ -3,7 +3,7 @@
     <html lang="uk">
 
     <head>
-       
+    
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
             rel="stylesheet">
     </head>
     <body>
-        <div data-modal class="backdrop is-hidden "> 
+         <div data-modal class="backdrop is-hidden "> 
             <div class="modal">
                 <button data-modal-close type="button" class="modal__button"><svg class="ikon-close-ikon" width="18" height="18">
                     <use href="./images/hw4/symbol-defs.svg#icon-close-ikon"></use>
@@ -71,7 +71,7 @@
         </div>
         <header class="header">
             <div class="container container__header">
-                 <a href="./index.html" lang="en" class="logo"> <span class="logo__web"> Web</span><span class="logo__studio">Studio</span></a>
+                 <a href="./index.html" lang="en" class="logo header__logo"> <span class="logo__web"> Web</span><span class="logo__studio">Studio</span></a>
             <nav class="nav">
                 <ul class="nav__list list">
                     <li><div class="underline"><a href="./index.html"  class="nav__link nav__link--current" >Студія</a></div></li>
@@ -91,6 +91,11 @@
                     </svg>
                 +38 096 111 11 11</a></li>
             </ul>  
+            <button class="header__menu button">
+            <svg class="header__menu-ikons" width="40" height="40">
+                <use href="./images/hw4/symbol-defs.svg#icon-menu"></use>
+            </svg></button>
+
             </div>
         </header>
         <main>
@@ -100,7 +105,7 @@
                  <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
                 <button data-modal-open type="button" class="hero__button button">Замовити послугу</button>
             </div>
-            </section>
+            </section> 
                 <!-- ОСОБЛИВОСТІ -->
             <section class="features section">
                 <div class="container">
@@ -158,7 +163,7 @@
                       <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/hw1/img(4).jpg" width="270" height="260" alt="Ігор">
+                        <img class="team__img" src="./images/hw1/img(4).jpg" width="" height="" alt="Ігор">
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                         <p class="team__text">Product Designer</p>
@@ -182,7 +187,7 @@
                         </ul></div>
                     </li>
                     <li class="team__item">
-                        <img class="team-img"  src="./images/hw1/img(5).jpg" width="270" height="260" alt="Ольга">
+                        <img class="team-img"  src="./images/hw1/img(5).jpg" width="" height="" alt="Ольга">
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Ольга Рєпіна</h3>
                         <p class="team__text">Frontend Developer</p>
@@ -211,7 +216,7 @@
                         </div>
                         </li>
                     <li class="team__item">
-                        <img class="team-img"  src="./images/hw1/img(6).jpg" width="270" height="260" alt="Микола">
+                        <img class="team-img"  src="./images/hw1/img(6).jpg" width="" height="" alt="Микола">
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Микола Тарасов</h3>
                         <p class="team__text">Marketing</p>
@@ -240,7 +245,7 @@
                     </div>
                     </li>
                     <li class="team__item">
-                        <img class="team-img"  src="./images/hw1/img(7).jpg" width="270" height="260" alt="Михайло">
+                        <img class="team-img"  src="./images/hw1/img(7).jpg" width="" height="" alt="Михайло">
                         <div class="team__text-container">
                          <h3 class="team__subtitle">Михайло Єрмаков</h3>
                         <p class="team__text">UI Designer</p>
@@ -315,9 +320,9 @@
                     </ul>
                 </div>
             </section>
-        </main>
+        </main> 
             <!-- FOOTER -->
-        <footer class="footer">
+        <footer class="footer ">
             <div class="footer__container container "> 
                 <div class="footer__nav">
                  <a href="./index.html" class="logo"><span class="logo__web"> Web</span><span class="logo__studio logo__studio--white">Studio</span></a>
@@ -363,7 +368,7 @@
 
             </div>
         </div>
-        </footer>  
+        </footer> 
         <script src="./js/modal.js"></script>
 </body>
 </html>
