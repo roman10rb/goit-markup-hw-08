@@ -180,9 +180,19 @@
                 <div class="container">
                      <h2 class="about__title title">Чим ми займаємося</h2>
                 <ul class="about__list list">
-                    <li class="about__item"><div class="about__img"><img src="./images/hw1/img(1).jpg" width="370" height="294" alt="Руки на клавіатурі"><p class="about__text">Десктопні додатки</p></div></li>
-                    <li class="about__item"><div class="about__img"><img src="./images/hw1/img(2).jpg" width="370" height="294" alt="Тримає телефон"><p class="about__text">Мобільні додатки</p></div></li>
-                    <li class="about__item"><div class="about__img"><img src="./images/hw1/img(3).jpg" width="370" height="294" alt="Тримає планшет"><p class="about__text">Дизайнерські рішення</p></div></li>
+                    <li class="about__item"><div class="about__img">
+                        <img
+                       srcset="./images\hw8\features\imgimg-1_lg@1x.jpg 1x, ./images\hw8\features\imgimg-1_lg@2x.jpg 2x"
+                         src="./images/hw1/img(1).jpg" width="370" height="294" alt="Руки на клавіатурі">
+                        <p class="about__text">Десктопні додатки</p></div></li>
+                    <li class="about__item"><div class="about__img">
+                        <img 
+                        srcset="./images\hw8\features\imgimg-2_lg@1x-1.jpg 1x, ./images\hw8\features\imgimg-2_lg@2x-1.jpg 2x"
+                        src="./images/hw1/img(2).jpg" width="370" height="294" alt="Тримає телефон"><p class="about__text">Мобільні додатки</p></div></li>
+                    <li class="about__item"><div class="about__img">
+                        <img 
+                        srcset="./images\hw8\features\imgimg-3_lg@1x-2.jpg 1x, ./images\hw8\features\imgimg-3_lg@2x-2.jpg 2x"
+                        src="./images/hw1/img(3).jpg" width="370" height="294" alt="Тримає планшет"><p class="about__text">Дизайнерські рішення</p></div></li>
                 </ul>
                 </div>
             </section>
@@ -192,7 +202,20 @@
                       <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/hw1/img(4).jpg" width="" height="" alt="Ігор">
+                        <img class="team__img" 
+                        srcset="
+                        ./images\hw8\team\imgsmD@x2.jpg 900w
+                        ./images\hw8\team\imgimg-2D_md2x.png 708w,
+                        ./images\hw8\team\imgimg-2D_lg@2x.jpg 540w,
+                        ./images\hw8\team\imgimg-1D_lg@1x.jpg 270w,
+                        ./images\hw8\team\imgimg-1D_md@1x.jpg 354w,
+                        ./images\hw8\team\imgsmD@x1.jpg 450w"
+                        
+
+                       sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+
+                        src="./images/hw1/img(4).jpg" width="" height="" alt="Ігор"
+                        loading="lazy">
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                         <p class="team__text">Product Designer</p>
@@ -216,7 +239,19 @@
                         </ul></div>
                     </li>
                     <li class="team__item">
-                        <img class="team-img"  src="./images/hw1/img(5).jpg" width="" height="" alt="Ольга">
+                        <img class="team-img"  
+                        srcset="
+                        ./images\hw8\team\imgsmO@x2-1.jpg 900w
+                        ./images\hw8\team\imgimg-2O_md2x.jpg 708w,
+                        ./images\hw8\team\imgimg-2O_lg@2x-1.jpg 540w,
+                        ./images\hw8\team\imgimg-1O_lg@1x-1.jpg 270w,
+                        ./images\hw8\team\imgimg-1O_md@1x-1.jpg 354w,
+                        ./images\hw8\team\imgsmO@x1-1.jpg 450w"
+                        
+
+                       sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/hw1/img(5).jpg" width="" height="" alt="Ольга"
+                        loading="lazy">
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Ольга Рєпіна</h3>
                         <p class="team__text">Frontend Developer</p>
@@ -245,7 +280,19 @@
                         </div>
                         </li>
                     <li class="team__item">
-                        <img class="team-img"  src="./images/hw1/img(6).jpg" width="" height="" alt="Микола">
+                        <img class="team-img"  
+                        srcset="
+                        ./images\hw8\team\imgsmT@x2-2.jpg 900w
+                        ./images\hw8\team\imgimg-2T_md2x.jpg 708w,
+                        ./images\hw8\team\imgimg-2T_lg@2x-2.jpg 540w,
+                        ./images\hw8\team\imgimg-1T_lg@1x-2.jpg 270w,
+                        ./images\hw8\team\imgimg-1T_md@1x-2.jpg 354w,
+                        ./images\hw8\team\imgsmT@x1-2.jpg 450w"
+                        
+
+                       sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/hw1/img(6).jpg" width="" height="" alt="Микола"
+                        loading="lazy">
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Микола Тарасов</h3>
                         <p class="team__text">Marketing</p>
@@ -274,7 +321,19 @@
                     </div>
                     </li>
                     <li class="team__item">
-                        <img class="team-img"  src="./images/hw1/img(7).jpg" width="" height="" alt="Михайло">
+                        <img class="team-img"  
+                       srcset="
+                        ./images\hw8\team\imgsmE@x2-3.jpg 900w
+                        ./images\hw8\team\imgimg-2E_md2x.jpg 708w,
+                        ./images\hw8\team\imgimg-2E_lg@2x-3.jpg 540w,
+                        ./images\hw8\team\imgimg-1E_lg@1x-3.jpg 270w,
+                        ./images\hw8\team\imgimg-1E_md@1x-3.jpg 354w,
+                        ./images\hw8\team\imgsmE@x1-3.jpg 450w"
+                        
+
+                       sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        src="./images/hw1/img(7).jpg" width="" height="" alt="Михайло"
+                        loading="lazy">
                         <div class="team__text-container">
                          <h3 class="team__subtitle">Михайло Єрмаков</h3>
                         <p class="team__text">UI Designer</p>
