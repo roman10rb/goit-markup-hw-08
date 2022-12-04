@@ -1095,8 +1095,8 @@ header {
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 521px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   padding-top: 40px;
@@ -1107,6 +1107,13 @@ header {
   background-color: #fff;
   -webkit-transform: scale(1) translate(-50%, -50%);
           transform: scale(1) translate(-50%, -50%);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+    margin-top: 0;
+  }
 }
 
 .modal__button {
@@ -1148,11 +1155,17 @@ header {
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal__group {
@@ -1261,14 +1274,20 @@ header {
 }
 
 .modal__checkbox-text {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal__checkbox-text--link {

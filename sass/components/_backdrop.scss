@@ -19,8 +19,8 @@
 
 .modal {
     position: absolute;
-    width: 528px;
-    min-height: 521px;
+    width: 450px;
+    height: 609px;
     top: 50%;
     left: 50%;
     padding-top: 40px;
@@ -31,6 +31,12 @@
 
     background-color: #fff;
     transform: scale(1) translate(-50%, -50%);
+
+@media screen and(min-width:1200px){
+    width: 528px;
+    min-height: 581px;
+    margin-top: 0;
+}    
 }
 
 .modal__button {
