@@ -1346,4 +1346,8 @@ header {
   height: 15px;
   background-image: url(../images/hw6/icon\ check.svg);
   outline: transparent;
+}
+
+.menu-container {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

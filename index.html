@@ -93,14 +93,19 @@
                     </svg>
                 +38 096 111 11 11</a></li>
             </ul>  
-            <button class="header__menu button">
+            <button class="header__menu button js-open-menu">
             <svg class="header__menu-ikons" width="40" height="40">
                 <use href="./images/hw4/symbol-defs.svg#icon-menu"></use>
             </svg></button>
-
-            </div>
         </header>
         <main>
+            <!-- Mobile menu -->
+            <div class="menu-container js-menu-container id">
+                <button class="menu-container__button button js-close-menu">
+                    <svg class="menu-container__ikon" width="40" height="40">
+                        <use href="./images/hw4/symbol-defs.svg#icon-close"></use>
+                    </svg></button>
+            </div>
             <!-- HERO -->
             <section class="hero">
                 <div class="container">
@@ -371,6 +376,10 @@
             </div>
         </div>
         </footer> 
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>
