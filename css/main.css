@@ -407,7 +407,7 @@ header {
 }
 
 .features__item {
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (max-width: 767px) {
   .features__item {
@@ -416,12 +416,12 @@ header {
 }
 @media screen and (min-width: 768px) {
   .features__item {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
-    width: 270px;
+    max-width: 270px;
   }
 }
 
@@ -667,12 +667,12 @@ header {
 }
 @media screen and (min-width: 768px) {
   .clients__link {
-    width: 226px;
+    max-width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__link {
-    width: 170px;
+    max-width: 170px;
   }
 }
 
@@ -706,7 +706,8 @@ header {
 }
 
 .footer {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2F303A;
 }
 
@@ -807,13 +808,13 @@ header {
 }
 
 .footer__form {
-  margin-top: 60px;
   margin-left: auto;
 }
 @media screen and (max-width: 768px) {
   .footer__form {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
   }
 }
 
@@ -839,7 +840,7 @@ header {
 }
 
 .footer__mail {
-  min-width: 450px;
+  max-width: 450px;
   min-height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -850,9 +851,14 @@ header {
   outline: none;
   color: #FFFFFF;
 }
+@media screen and (min-width: 480px) {
+  .footer__mail {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__mail {
-    min-width: 358px;
+    max-width: 358px;
   }
 }
 
@@ -1380,10 +1386,9 @@ header {
   padding: 0;
   margin: 0;
   list-style: none;
-  overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .menu {
     display: none;
   }
@@ -1431,6 +1436,7 @@ header {
 }
 
 .menu-container {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1474,7 +1480,7 @@ header {
   display: block;
   color: #241717;
   text-decoration: none;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
@@ -1483,7 +1489,7 @@ header {
 
 .mobile-menu .nav__link--current {
   color: #2196F3;
-  padding-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .mobile-menu .nav__link--current::after {
@@ -1492,6 +1498,8 @@ header {
 
 .menu-contacts {
   margin-top: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu-contacts .kontakts__tel {
@@ -1500,7 +1508,7 @@ header {
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196F3;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .menu-contacts .kontakts__mail {
@@ -1508,19 +1516,18 @@ header {
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: #757575;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .menu-ikons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 20px;
   font-weight: 500;
   font-size: 18px;

@@ -1,5 +1,6 @@
 .footer {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
 }
 
@@ -99,12 +100,13 @@
  }
 
  .footer__form {
-    margin-top: 60px;
+   
      margin-left: auto;
 
 @media screen and (max-width: 768px) {
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    margin-top: 60px;
     }
      
  }
@@ -117,6 +119,7 @@
      align-items: center;
 @media screen and (max-width: 1199px) {
     flex-direction: column;
+
      gap: 20px;
     }
  }
@@ -124,7 +127,7 @@
  .footer__mail {
 
 
-     min-width: 450px;
+     max-width: 450px;
      min-height: 50px;
      background-color: transparent;
      border: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,8 +137,12 @@
      outline: none;
      color: #FFFFFF;
 
+    @media screen and (min-width:480px) {
+            width: 450px;
+        }
+
 @media screen and (min-width:1200px){
-    min-width: 358px;
+    max-width: 358px;
 }     
  }
 
@@ -180,7 +187,6 @@
 
  }
  .footer__button-text {
-
 
      display: inline-block;
      font-weight: 700;
