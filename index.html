@@ -18,7 +18,7 @@
             rel="stylesheet">
     </head>
     <body>
-         <div data-modal class="backdrop is-hidden "> 
+         <div data-modal class="backdrop is-hidden"> 
             <!-- Modal -->
             <div class="modal">
                 <button data-modal-close type="button" class="modal__button"><svg class="ikon-close-ikon" width="18" height="18">
@@ -73,7 +73,8 @@
         <!-- Header -->
         <header class="header">
             <div class="container container__header">
-                 <a href="./index.html" lang="en" class="logo header__logo"> <span class="logo__web"> Web</span><span class="logo__studio">Studio</span></a>
+                 <a href="./index.html" lang="en" class="logo header__logo"> <span class="logo__web"> Web</span>
+                    <span class="logo__studio">Studio</span></a>
             <nav class="nav">
                 <ul class="nav__list list">
                     <li><div class="underline"><a href="./index.html"  class="nav__link nav__link--current" >Студія</a></div></li>
@@ -98,10 +99,11 @@
                     <use href="./images/hw4/symbol-defs.svg#icon-menu"></use>
                 </svg>
             </button>
+        </div>
         </header>
-        <main>
+            <main>
               <!-- Mobile menu -->
-            <div class="menu-container js-menu-container" id="mobile-menu">
+                <div class="menu-container js-menu-container" id="mobile-menu">
                 <button class="menu-toggle js-close-menu">
                     <svg  width="40" height="40">
                         <use href="./images/hw4/symbol-defs.svg#icon-close"></use>
@@ -126,8 +128,9 @@
                     <li class="ikons__team"><a href="https://www.facebook.com/" target="_blank" rel="no-referrer noopener"></a>Facebook</li>
                     <li class="ikons__team"> <a href="https://ua.linkedin.com/" target="_blank" rel="no-referrer noopener"></a>LinkedIn</li>  
                 </ul>
-            </div>
-        
+            
+             </div>
+            </main>
             <!-- HERO -->
             <section class="hero">
                 <div class="container">
@@ -202,22 +205,16 @@
                       <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <picture>
                         <img class="team__img" 
-                        srcset="
-                        ./images\hw8\team\img_2xD.jpg 900w,
+                        srcset="./images\hw8\team\img_2xD.jpg 900w,
                         ./images\hw8\team\imgimg-2D_md2x.png 708w,
                         ./images\hw8\team\imgimg-2D_lg@2x.jpg 540w,
                         ./images\hw8\team\imgimg-1D_lg@1x.jpg 270w,
                         ./images\hw8\team\imgimg-1D_md@1x.jpg 354w,
                         ./images\hw8\team\img_1xD.jpg 450w"
-                        
-
                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-
-                        src="./images/hw1/img(4).jpg" width="" height="" alt="Ігор"
+                        src="./images/hw1/img(4).jpg" alt="Ігор"
                         loading="lazy">
-                    </picture>
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                         <p class="team__text">Product Designer</p>
@@ -241,20 +238,16 @@
                         </ul></div>
                     </li>
                     <li class="team__item">
-                        <picture>
                         <img class="team-img"  
-                        srcset="
-                        ./images\hw8\team\img_sm2xO.jpg 900w,
+                        srcset="./images\hw8\team\img_sm2xO.jpg 900w,
                         ./images\hw8\team\imgimg-2O_md2x.jpg 708w,
                         ./images\hw8\team\imgimg-2O_lg@2x-1.jpg 540w,
                         ./images\hw8\team\imgimg-1O_lg@1x-1.jpg 270w,
                         ./images\hw8\team\imgimg-1O_md@1x-1.jpg 354w,
                         ./images\hw8\team\img_sm1xO.jpg 450w"
-                        
-
                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/hw1/img(5).jpg" width="" height="" alt="Ольга"
-                        loading="lazy"></picture>
+                        src="./images/hw1/img(5).jpg"  alt="Ольга"
+                        loading="lazy">
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Ольга Рєпіна</h3>
                         <p class="team__text">Frontend Developer</p>
@@ -283,20 +276,16 @@
                         </div>
                         </li>
                     <li class="team__item">
-                        <picture>
                         <img class="team-img"  
-                        srcset="
-                        ./images\hw8\team\img_sm2x@T.jpg 900w,
+                        srcset="./images\hw8\team\img_sm2x@T.jpg 900w,
                         ./images\hw8\team\img_md2x@T.jpg 708w,
                         ./images\hw8\team\imgimg-2T_lg@2x-2.jpg 540w,
                         ./images\hw8\team\imgimg-1T_lg@1x-2.jpg 270w,
                         ./images\hw8\team\imgimg-1T_md@1x-2.jpg 354w,
                         ./images\hw8\team\img_sm1x@T.jpg 450w"
-                        
-
                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/hw1/img(6).jpg" width="" height="" alt="Микола"
-                        loading="lazy"></picture>
+                        src="./images/hw1/img(6).jpg" alt="Микола"
+                        loading="lazy">
                         <div class="team__text-container">
                         <h3 class="team__subtitle">Микола Тарасов</h3>
                         <p class="team__text">Marketing</p>
@@ -325,20 +314,16 @@
                     </div>
                     </li>
                     <li class="team__item">
-                        <picture>
                         <img class="team-img"  
-                       srcset="
-                        ./images\hw8\team\img_sm2x@E.jpg 900w,
+                       srcset="./images\hw8\team\img_sm2x@E.jpg 900w,
                         ./images\hw8\team\img_md2x@E.png 708w,
                         ./images\hw8\team\imgimg-2E_lg@2x.jpg 540w,
                         ./images\hw8\team\imgimg-1E_lg@1x.jpg 270w,
                         ./images\hw8\team\img_md1x@E.jpg 354w,
                         ./images\hw8\team\img_sm1x@E.jpg 450w"
-                        
-
                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                        src="./images/hw1/img(7).jpg" width="" height="" alt="Михайло"
-                        loading="lazy"></picture>
+                        src="./images/hw1/img(7).jpg" alt="Михайло"
+                        loading="lazy">
                         <div class="team__text-container">
                          <h3 class="team__subtitle">Михайло Єрмаков</h3>
                         <p class="team__text">UI Designer</p>
@@ -412,10 +397,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-        </main> 
+            </section> 
             <!-- FOOTER -->
-        <footer class="footer ">
+        <footer class="footer">
             <div class="footer__container container "> 
                 <div class="footer__nav">
                  <a href="./index.html" class="logo"><span class="logo__web"> Web</span><span class="logo__studio logo__studio--white">Studio</span></a>
